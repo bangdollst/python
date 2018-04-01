@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """MockProject URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -15,7 +16,16 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from testapp import views
+
+
+
+
+
+
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
+    #url(r'^admin/', admin.site.urls),
+    url(r'^index/',views.index),
+    url(r'^$',views.index)
 ]
